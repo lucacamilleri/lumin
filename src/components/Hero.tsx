@@ -44,14 +44,14 @@ const Hero = () => {
 
         <div className="hero-platforms">
           <div className="available">Available On</div>
+        </div>
+        <div className="hero-platforms">
           <div className="platform-list">
             <PlatformIcon label="Steam" />
             <PlatformIcon label="Playstation" />
             <PlatformIcon label="Xbox" />
           </div>
         </div>
-
-        <h2 className="hero-sub">THE LIGHT AWAKENS</h2>
       </div>
     </main>
   );
