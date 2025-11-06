@@ -12,7 +12,10 @@ const App = () => {
         <Hero />
       </Section>
       <Section>
-        <h1>Test</h1>
+        <h1>Here we can place another banner</h1>
+      </Section>
+      <Section>
+        <h1>And another banner</h1>
       </Section>
     </div>
   );

@@ -231,6 +231,7 @@ body {
   justify-content: center;
   /* keep light vertical spacing by default; specific full-screen sections override padding */
   padding: 24px 20px;
+  margin-top: var(--nav-offset);
 }
 
 .hero-inner {
