@@ -32,7 +32,16 @@ const Hero = () => {
       <div className="hero-inner">
         <div className="hero-eyebrow">A SINGLE LIGHT IN ENDLESS SHADOW</div>
 
-        <h1 className="hero-title">L U M I N</h1>
+        <h1 className="hero-title">
+          L
+          <img 
+            src="/moon.png" 
+            alt="Moon representing U" 
+            className="inline-moon"
+          />
+          M I N
+        </h1>
+
 
         <div className="hero-cta">
           <CTAButton>Pre-Order Now</CTAButton>

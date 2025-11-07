@@ -2,6 +2,7 @@
   --bg: #0b0b0c;
   --panel: rgba(20, 20, 20, 0.6);
   --muted: #bdbdbd;
+  --bright: #ffffff;
   --accent: #f6d976;
   --nav-offset: 72px; /* approximate floating navbar height; tweak if your nav is taller/shorter */
 }
@@ -315,9 +316,8 @@ body {
 }
 
 .available {
-  color: var(--accent);
-  font-size: 35px;
-  font-weight: 600;
+  color: var(--bright);
+  font-size: 29px;
 }
 
 .platform-list {
