@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
-
+import Rekindle from "./components/Rekindle";
 import "./App.css";
 
 const App = () => {
@@ -12,7 +12,8 @@ const App = () => {
         <Hero />
       </Section>
       <Section>
-        <h1>Here we can place another banner</h1>
+        <Rekindle>
+        </Rekindle>
       </Section>
       <Section>
         <h1>And another banner</h1>

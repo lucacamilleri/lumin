@@ -326,6 +326,15 @@ body {
   margin-left: 8px;
 }
 
+.inline-moon {
+  width: 1em;         /* match font size */
+  height: 1em;        /* keep square */
+  vertical-align: -0.15em; /* adjust to baseline */
+  margin: 0 0.15em;   /* spacing between letters */
+  rotate: 44deg;
+}
+
+
 .platform-icon {
   width: 100px;
   height: 100px;

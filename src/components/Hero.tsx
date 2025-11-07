@@ -35,8 +35,8 @@ const Hero = () => {
         <h1 className="hero-title">
           L
           <img 
-            src="/moon.png" 
-            alt="Moon representing U" 
+            src="src/moon.png" 
+ 
             className="inline-moon"
           />
           M I N
