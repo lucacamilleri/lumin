@@ -492,3 +492,78 @@ body {
     display: none;
   }
 }
+
+.section-divider{
+  margin-top: 100px;
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 40px;
+}
+
+/* subtle white glow for highlighted words like 'Awakens' */
+.glow {
+  color: #fff; /* ensure the base color is white */
+  text-shadow:
+    0 0 8px rgba(255,255,255,0.95), /* tight bright core */
+    0 0 20px rgba(255,255,255,0.18), /* broader soft halo */
+    0 6px 24px rgba(246,217,118,0.04); /* tiny warm wash to tie into accent */
+  transition: text-shadow 260ms ease, transform 260ms ease;
+  /* slight lift on hover to reinforce interactivity */
+}
+
+.glow:hover {
+  transform: translateY(-2px);
+  text-shadow:
+    0 0 12px rgba(255,255,255,1),
+    0 0 30px rgba(255,255,255,0.26),
+    0 10px 40px rgba(246,217,118,0.06);
+}
+
+/* small top-left label for sections */
+.section-top-left-1 {
+  position: absolute;
+  font-weight: bold;
+  left: 28px;
+  color: #ffffff;
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  font-size: 96px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.section-top-left-2 {
+  position: absolute;
+  font-weight: bold;
+  left: 150px;
+  color: #ffffff;
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  font-size: 96px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  z-index: 2;
+  margin-top: 80px;
+}
+.section-top-left-3 {
+  position: absolute;
+  font-weight: bold;
+  left: 28px;
+  color: #ffffff;
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  font-size: 96px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  z-index: 2;
+  margin-top: 160px;
+}
+
+@media (max-width: 800px) {
+  .section-top-right {
+    top: 12px;
+    right: 12px;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}

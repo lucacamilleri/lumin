@@ -61,6 +61,7 @@ const Hero = () => {
             <PlatformIcon label="Xbox" />
           </div>
         </div>
+        <span className="section-divider">The Light <span className="glow">Awakens</span></span>
       </div>
     </main>
   );

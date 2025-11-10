@@ -32,6 +32,10 @@ const Rekindle: React.FC<RekindleProps> = ({ children, className }) => {
                     objectFit: "cover",
                 }}
             />
+            {/* top-left section label */}
+            <div className="section-top-left-1">Rekindle</div>
+            <div className="section-top-left-2">Ancient</div>
+            <div className="section-top-left-3">Beacons</div>
             <div
                 style={{
                     position: "relative",
