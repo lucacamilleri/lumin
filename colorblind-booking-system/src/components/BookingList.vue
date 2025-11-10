@@ -49,7 +49,7 @@
               colspan="5"
               class="text-center text-gray-500 dark:text-gray-400 p-6 italic"
             >
-              No booking applications yet
+              No booking applications ye
             </td>
           </tr>
         </tbody>
