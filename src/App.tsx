@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Section from "./components/Section";
 import Rekindle from "./components/Rekindle";
 import "./App.css";
+import Survive from "./components/Survive";
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
         </Rekindle>
       </Section>
       <Section>
-        <h1>And another banner</h1>
+       <Survive/>
       </Section>
     </div>
   );
