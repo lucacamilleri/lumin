@@ -1,5 +1,5 @@
 import React from "react";
-import rekindle from "../rekindle.mp4"; // adjust path if your video lives elsewhere
+import rekindle from "../rekindle.mp4";
 
 type RekindleProps = {
     children?: React.ReactNode;

@@ -4,7 +4,7 @@
   --muted: #bdbdbd;
   --bright: #ffffff;
   --accent: #f6d976;
-  --nav-offset: 72px; /* approximate floating navbar height; tweak if your nav is taller/shorter */
+  --nav-offset: 72px;
 }
 
 html,
@@ -78,23 +78,22 @@ body {
 }
 
 .section-full.hero-section .hero {
-  /* make the hero area fit inside the viewport minus the floating navbar height */
   min-height: calc(100vh - var(--nav-offset));
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box; /* ensure padding is included in sizing */
-  padding: 0 20px; /* avoid large vertical padding that pushes the section taller than the viewport */
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 .section-full.hero-section .hero-inner {
   margin: 0 auto;
-  height: auto; /* avoid fixed height which can exceed smaller viewports */
+  height: auto;
   max-height: calc(
     100vh - var(--nav-offset) - 48px
-  ); /* reserve some breathing room inside the hero */
+  );
   box-sizing: border-box;
-  overflow: auto; /* allow internal scroll if content is too tall instead of growing the section */
+  overflow: auto;
 }
 
 .team-title {
@@ -230,7 +229,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* keep light vertical spacing by default; specific full-screen sections override padding */
   padding: 24px 20px;
   margin-top: var(--nav-offset);
 }
@@ -319,6 +317,7 @@ body {
 .available {
   color: var(--bright);
   font-size: 29px;
+  font-weight: 600;
 }
 
 .platform-list {
@@ -328,13 +327,12 @@ body {
 }
 
 .inline-moon {
-  width: 1em;         /* match font size */
-  height: 1em;        /* keep square */
-  vertical-align: -0.15em; /* adjust to baseline */
-  margin: 0 0.15em;   /* spacing between letters */
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  margin: 0 0.15em;
   rotate: 44deg;
 }
-
 
 .platform-icon {
   width: 100px;
@@ -351,7 +349,7 @@ body {
 }
 
 .platform-icon:hover {
-  background: #f6d87694;
+  background: rgba(229, 168, 13, 0.2);
   cursor: pointer;
 }
 
@@ -470,6 +468,137 @@ body {
   box-shadow: 0 8px 24px rgba(246, 217, 118, 0.08);
 }
 
+.footer {
+  background: #111112;
+  color: #e0e0e0;
+  padding: 4rem 2rem 2rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 100vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.footer-section h3.footer-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.footer-tagline {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}
+
+.footer-section h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.social-links a:hover {
+  background: rgba(229, 168, 13, 0.2);
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom p {
+  color: #808080;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-legal a {
+  color: #808080;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: var(--accent);
+}
+
 @media (max-width: 800px) {
   .hero-title {
     font-size: 52px;
@@ -492,34 +621,40 @@ body {
   .user-btn {
     display: none;
   }
+  .footer {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .footer-content {
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-.section-divider{
+.section-divider {
   margin-top: 100px;
   font-family: "Cinzel", Georgia, serif;
   font-size: 40px;
 }
 
-/* subtle white glow for highlighted words like 'Awakens' */
 .glow {
-  color: #fff; /* ensure the base color is white */
-  text-shadow:
-    0 0 8px rgba(255,255,255,0.95), /* tight bright core */
-    0 0 20px rgba(255,255,255,0.18), /* broader soft halo */
-    0 6px 24px rgba(246,217,118,0.04); /* tiny warm wash to tie into accent */
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.95),
+    0 0 20px rgba(255, 255, 255, 0.18),
+    0 6px 24px rgba(246, 217, 118, 0.04);
   transition: text-shadow 260ms ease, transform 260ms ease;
-  /* slight lift on hover to reinforce interactivity */
 }
 
 .glow:hover {
   transform: translateY(-2px);
-  text-shadow:
-    0 0 12px rgba(255,255,255,1),
-    0 0 30px rgba(255,255,255,0.26),
-    0 10px 40px rgba(246,217,118,0.06);
+  text-shadow: 0 0 12px rgba(255, 255, 255, 1),
+    0 0 30px rgba(255, 255, 255, 0.26), 0 10px 40px rgba(246, 217, 118, 0.06);
 }
 
-/* small top-left label for sections */
 .section-top-left-1 {
   position: absolute;
   font-weight: bold;

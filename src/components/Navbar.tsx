@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  // Define the navigation links
   const links = ["Home", "Story", "Gameplay", "Media", "About Us"];
 
-  // some states to manage active link and mobile menu
   const [active, setActive] = useState<string>("Home");
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const logoSrc = `/logo/Lumin.svg`;
