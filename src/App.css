@@ -11,6 +11,7 @@ html,
 body,
 #root {
   height: 100%;
+  overflow-x: hidden; 
 }
 
 body {
@@ -74,7 +75,8 @@ body {
       rgba(255, 240, 200, 0.04),
       transparent 18%
     ),
-    url("/banners/Hero.png") center/cover no-repeat;
+    url("./banners/Hero.png") center/cover no-repeat;
+  object-fit: cover;
 }
 
 .section-full.hero-section .hero {
@@ -93,7 +95,7 @@ body {
     100vh - var(--nav-offset) - 48px
   );
   box-sizing: border-box;
-  overflow: auto;
+
 }
 
 .team-title {
@@ -267,7 +269,6 @@ body {
   color: var(--accent);
   text-shadow: 0 8px 36px rgba(246, 217, 118, 0.06),
     0 2px 6px rgba(0, 0, 0, 0.7);
-  overflow: hidden;
 }
 
 .hero-title .hero-moon {

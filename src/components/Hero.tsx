@@ -33,13 +33,7 @@ const Hero = () => {
         <div className="hero-eyebrow">A SINGLE LIGHT IN ENDLESS SHADOW</div>
 
         <h1 className="hero-title">
-          L
-          <img 
-            src="src/moon.png" 
- 
-            className="inline-moon"
-          />
-          M I N
+          L U M I N
         </h1>
 
 

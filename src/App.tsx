@@ -26,7 +26,7 @@ const App = () => {
               <h3 className="footer-brand">Lumin</h3>
             </div>
             <p className="footer-tagline">
-              Strike a balance between moments of tension and genuine wonder.
+              Every dawn begins with a spark.
             </p>
           </div>
 
