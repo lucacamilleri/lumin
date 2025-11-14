@@ -1,7 +1,7 @@
 import CTAButton from "./CTAButton";
 
 const PlatformIcon = ({ label }: { label: string }) => {
-  const src = `/platforms/${label}.svg`;
+  const src = `./platforms/${label}.svg`;
   let link = "";
 
   if (label === "Playstation") {

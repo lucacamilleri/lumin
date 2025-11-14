@@ -21,7 +21,7 @@ const App = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-brand-container">
-              <img src="/logo/Lumin.svg" alt="Lumin Logo" className="footer-logo" />
+              <img src="./logo/Lumin.svg" alt="Lumin Logo" className="footer-logo" />
               <h3 className="footer-brand">Lumin</h3>
             </div>
             <p className="footer-tagline">

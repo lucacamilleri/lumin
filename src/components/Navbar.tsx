@@ -5,7 +5,7 @@ const Navbar = () => {
 
   const [active, setActive] = useState<string>("Home");
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
-  const logoSrc = `/logo/Lumin.svg`;
+  const logoSrc = `./logo/Lumin.svg`;
 
   useEffect(() => {
     if (mobileOpen) {
