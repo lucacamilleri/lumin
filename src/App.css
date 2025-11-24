@@ -470,6 +470,10 @@ body {
 }
 
 .footer {
+  max-width: 100%;
+  min-width: 50%;
+  width: 100%;
+
   background: #111112;
   color: #e0e0e0;
   padding: 4rem 2rem 2rem;
@@ -482,8 +486,11 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  /* padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+
+  padding: max(24px, min(32px, 4vw));
 }
 
 .footer-brand-container {
@@ -576,6 +583,8 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+
+  padding: max(24px, min(32px, 4vw));
 }
 
 .footer-bottom p {
