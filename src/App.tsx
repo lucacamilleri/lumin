@@ -4,6 +4,7 @@ import Section from "./components/Section";
 import Rekindle from "./components/Rekindle";
 import "./App.css";
 import Survive from "./components/Survive";
+import Dawn from "./components/Dawn";
 
 const App = () => {
   return (
@@ -15,8 +16,22 @@ const App = () => {
       <Section>
         <Rekindle></Rekindle>
       </Section>
+      <div className="dark-interlude">
+        <p className="dark-interlude-text">
+          Restore the warmth of a dying world — one spark at a time.
+        </p>
+      </div>
       <Section>
        <Survive/>
+      </Section>
+      <div className="dark-interlude">
+        <p className="dark-interlude-text">
+          YOUR JOURNEY ENDS WHERE <span className="light-glow">LIGHT</span> IS REBORN
+        </p>
+      </div>
+
+      <Section>
+       <Dawn/>
       </Section>
       <footer className="footer">
         <div className="footer-content">

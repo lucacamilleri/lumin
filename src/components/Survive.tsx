@@ -17,8 +17,10 @@ const Survive: React.FC<SurviveProps> = ({ children, className }) => {
                     <span>SURVIVE</span><br />
                     <span>THE</span><br />
                     <span>
-                        SHAD<span className="ows">OWS</span>
-                    </span>
+                    <span className="shadows-gradient">SHAD</span>
+                    <span className="ows-stroke">OWS</span>
+                </span>
+
                 </h2>
             </div>
 

@@ -501,8 +501,8 @@ body {
 }
 
 .footer-logo {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
 }
 
@@ -533,6 +533,14 @@ body {
   padding: 0;
   margin: 0;
 }
+.shadows-gradient {
+  background: linear-gradient(90deg, #ffffff 0%, #616161 50%, #414141 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
 
 .footer-links li {
   margin-bottom: 0.75rem;
@@ -724,7 +732,7 @@ body {
 
 /* LEFT PANEL */
 .survive-left {
-    width: 40%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -734,9 +742,11 @@ body {
 
 .survive-title {
     font-family: sans-serif;
-    font-size: 3.5rem;
+    font-size: 6rem;
     color: white;
     font-weight: 700;
+    position: relative;
+    left:100px;
     line-height: 1.2;
 }
 
@@ -747,9 +757,9 @@ body {
 
 /* RIGHT PANEL */
 .survive-right {
-    width: 60%;
+    width: 75%;
     position: relative;
-clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
     border-radius: 0 12px 12px 0;
 }
 
@@ -763,3 +773,117 @@ clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
     z-index: 1;
 }
 
+/* Gradient for SHAD */
+.shadows-gradient {
+  background: linear-gradient(90deg, #ffffff 0%, #d1d1d1 50%, #999999 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+/* Black letters with white border for OWS */
+.ows-stroke {
+  color: #000000; /* black fill */
+  -webkit-text-stroke: 2px #ffffff; /* white border */
+  text-stroke: 2px #ffffff; /* fallback */
+  font-weight: 800;
+}
+
+.dawn {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse; /* flips sides */
+}
+
+/* TEXT PANEL (RIGHT) */
+.dawn-left {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 4rem;
+  z-index: 2;
+}
+
+.dawn-title {
+  font-family: sans-serif;
+  position: relative;
+  right: 100px;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: right;
+
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffdc88 61%,
+    #ffc842 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+/* VIDEO PANEL (LEFT) */
+.dawn-right {
+  width: 75%;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  border-radius: 0 12px 12px 0;
+}
+
+.dawn-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+/* INTERLUDE / TRANSITION SECTION */
+.dark-interlude {
+  width: 100%;
+  min-height: 120px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.dark-interlude-text {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  text-shadow:
+    0 0 6px rgba(255, 255, 255, 0.4),
+    0 0 18px rgba(255, 200, 120, 0.25),
+    0 0 36px rgba(255, 160, 40, 0.15);
+}
+
+.light-glow {
+  color: #ffffff;
+
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 1),
+    0 0 20px rgba(255, 255, 255, 0.9),
+    0 0 40px rgba(255, 255, 255, 0.8),
+    0 0 80px rgba(255, 255, 255, 0.6),
+    0 0 120px rgba(255, 255, 255, 0.4);
+}
