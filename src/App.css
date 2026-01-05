@@ -75,7 +75,7 @@ body {
       rgba(255, 240, 200, 0.04),
       transparent 18%
     ),
-    url("./banners/Hero.png") center/cover no-repeat;
+    url("/banners/Hero.png") center/cover no-repeat;
   object-fit: cover;
   padding-top: 80px;
 }
