@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import surviveVideo from "../Survive.mp4";
+import surviveVideo from "/Survive.mp4";
 
 type SurviveProps = {
     children?: React.ReactNode;

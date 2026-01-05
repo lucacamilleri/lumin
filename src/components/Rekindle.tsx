@@ -1,5 +1,5 @@
 import React from "react";
-import rekindle from "../rekindle.mp4";
+import rekindle from "/rekindle.mp4";
 
 type RekindleProps = {
     children?: React.ReactNode;

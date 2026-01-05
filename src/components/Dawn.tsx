@@ -1,6 +1,6 @@
 import React from "react";
-import dawnVideo from "../final.mp4"; 
 import "../App.css";
+import dawnVideo from "/final.mp4";
 
 type DawnProps = {
     children?: React.ReactNode;
